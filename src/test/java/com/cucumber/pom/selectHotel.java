@@ -8,24 +8,22 @@ import org.openqa.selenium.support.PageFactory;
 public class selectHotel {
 	static WebDriver driver;
 
-
-
 	@FindBy(xpath = "//input[@type='text' and @id='hotel_name_0']")
 	private WebElement checkTheHotelName;
 
-	@FindBy(xpath="(//input[@type='text'])[2]")
+	@FindBy(xpath = "(//input[@type='text'])[2]")
 	private WebElement checkTheLocation;
 
 	@FindBy(xpath = "(//input[@class='select_text'])[3]")
 	private WebElement checkTheroom;
 
-	@FindBy(xpath = "//input[@type='text' and @id='arr_date_0']")
+	@FindBy(xpath = "(//input[@class='select_text'])[4]")
 	private WebElement checkTheArrivalDate;
 
-	@FindBy(xpath = "//input[@type='text' and @id='dep_date_0']")
+	@FindBy(xpath = "(//input[@class='select_text'])[5]")
 	private WebElement checkTheDepatureDate;
 
-	@FindBy(xpath = "//input[@type='text' and @id='no_days_0']")
+	@FindBy(xpath = "(//input[@class='select_text'])[6]")
 	private WebElement CheckTheNumberOfDays;
 
 	@FindBy(xpath = "(//input[@class='select_text'])[7]")
@@ -39,7 +37,6 @@ public class selectHotel {
 
 	@FindBy(xpath = "//input[@value='Continue']")
 	private WebElement submitTheContinueButton;
-
 
 	public WebElement getCheckTheHotelName() {
 		return checkTheHotelName;

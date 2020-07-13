@@ -5,10 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import baseclass.baseclass;
-
-public class searchHotel extends baseclass {
-
+public class searchHotel {
+static WebDriver driver;
 	@FindBy(id = "location")
 	private WebElement selectThelocation;
 
@@ -21,7 +19,7 @@ public class searchHotel extends baseclass {
 	@FindBy(id = "room_nos")
 	private WebElement selectTheNumberOfRooms;
 
-	@FindBy(id = "datepick_in")
+	@FindBy(xpath="//input[@name='datepick_in']")
 	private WebElement enterTheCheckInDate;
 
 	@FindBy(id = "datepick_out")
